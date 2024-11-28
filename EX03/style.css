@@ -1,0 +1,109 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 1.5rem;
+}
+
+html {
+    font-size: 65%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 600px;
+}
+
+header h1 {
+    padding: 3rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    background-color: #871717;
+    color: #DAFFFB;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.container {
+    width: 600px;
+    background-color: #871717;
+    color: #DAFFFB;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.first-name-group,
+.last-name-group,
+.email-group,
+.phone-group,
+.media-group,
+.message-group {
+    flex-grow: 1;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0 1rem 0;
+    border-radius: 0.5rem;
+}
+
+input:hover,
+textarea:hover {
+    border: 3px solid #DAFFFB;
+    background-color: #f9f9f9;
+}
+
+.message-group {
+    margin-top: 3rem;
+}
+
+.message-group textarea {
+    overflow-y: scroll;
+}
+
+.btn {
+    justify-content: end;
+}
+
+.btn input[type="button"] {
+    padding: 1rem 2rem;
+    background-color: #871717;
+    color: #DAFFFB;
+}
+
+
+@media (max-width: 865px) {
+    html {
+        font-size: 50%
+    }
+
+    header {
+        width: 400px;
+    }
+
+    .container {
+        width: 400px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+}
